@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cármine Tortas</title>
+	<link rel="icon" href="/img/logo.png">
+	<link rel="stylesheet" href="/css/styles.css">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/set1.css">
+
+
+    <link rel="stylesheet" href="/dist/assets/packages/nice-select/nice-select.css">
+    <link rel="stylesheet" href="/dist/assets/packages/cloudzoom/cloudzoom.css">
+    <link rel="stylesheet" href="/dist/assets/packages/animate/animate.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+</head>
+<body>
+	
+	
+	<!--____________________header______________________________-->
+	
+
+		<div class="main_1 wow fadeInDown"  data-wow-delay=".8s">
+			<div class="container">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
+							<p class="logo"><a href="/">Cármine Tortas</a></p>
+						</div>
+						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
+							
+							<div class="search-box">
+    								<input type="text" placeholder=""/>
+    								<input type="button" value="Search"/>
+  								</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="n_top_nav">
+	
+				<div class="left_logo">
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
+						<p class="logo"><a href="/">Calzados Cascini</a></p>
+					</div>
+				</div>
+			<ul class="nav_text">
+				
+
+						<% if(user) { %>
+						<li><a href="/" class="menu_active">Inicio</a></li>
+						<li><a href="/produnoindex/1">Nuestras tortas</a></li>
+						<li><a href="/about">Nosotros</a></li>	
+						<li><a href="/perfil/1">Perfil</a></li>
+						 <li><a href="/users/logout">Salir</a></li>
+						 <li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
+						<% } else { %>    
+						<li><a href="/" class="menu_active">Inicio</a></li>
+						<li><a href="/produnoindex/1">Nuestras tortas</a></li>
+						<li><a href="/about">Nosotros</a></li>	
+						<li><a href="/users/signin">Iniciar Sesión</a></li>
+						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
+
+						<% } %>
+
+
+					</ul>
+					<div class="menu btn13" data-menu="2">
+						<div class="iconn">	<a href="/shopcart/" style="color:black"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></div>
+					</div>
+					<div class="menu btn2" data-menu="2">
+        				<div class="icon"></div>
+      				</div>
+      	
+		</div>

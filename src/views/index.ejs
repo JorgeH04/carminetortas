@@ -1,0 +1,188 @@
+<% include partials/_header %>
+<div class="slider_main owl-carousel owl-theme">
+	<div class="item">
+	  <div class="nav  wow fadeInUp">
+	<div class="container">
+
+		<div class="header_caption">
+
+			<div class="animated_caption">
+			<h1>Cármine tortas <br>	</h1>
+			<p>Las mejores tortas artesanales <br>Ideales para cualquier ocasión <br></p>
+			<ul class="caption_button">
+				
+			</ul>
+			<button>Ver</button>
+		</div>
+	</div>
+	</div>
+</div>
+	</div>
+	<div class="items">
+	  <div class="nav navv  wow fadeInUp" data-wow-delay=".8s">
+	<div class="container">
+		<div class="header_caption">
+			<div class="animated_caption">
+			<h1>Cármine Tortas<br></h1>
+			<p>Nunc non fermentum nunc. Sed ut ante eget leo tempor <br>consequat sit amet eu orci. Donec dignissim <br>dolor eget..</p>
+			<ul class="caption_button">
+			</ul>
+			<button>$145.99</button>
+		</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</div>
+
+
+
+<!--____________________header_______________________________-->
+<!--____________________banner_______________________________-->
+
+
+
+
+
+
+
+
+<div class="main_2 wow fadeInUp">
+	<div class="product">
+		<div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12">
+			<div class="container">
+			<h2>DESTACADOS</h2>
+		
+		</div>
+	</div>
+	<div class="col-xl-3 product_list_side_img col-lg-3 col-md-3 col-sm-10">
+										
+	</div>
+	<div class="col-xl-8 product_list_caption col-lg-8 col-md-8 col-sm-12">
+		<h2><a href="#"></a></h2>
+		<div class="product_price">
+			<p> <del></del>
+				<span>
+			
+			</span>
+			</p>
+			<p class="p_caption">
+			</p>
+			<ul class="p_icon_list">
+			
+			</ul>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="product_img_box">
+			<div class="container">
+	<div class="row ">
+	
+		
+				<% ofertauno.forEach(function (ofertaun) { %>
+					<div class="col-xl-3 text-center col-lg-3 col-md-3 col-sm-6 bestt portfolio-item ">
+						<div class="img_box_1">
+							<a href="/ofertaunoredirect/<%= ofertaun.id %>"><div class="overlay"></div></a>
+							<img src="<%= ofertaun.image %>" alt="">
+							<div class="p_icon">
+								<ul>
+									<li><a href="/ofertaunoredirect/<%= ofertaun.id %>"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+									<li><a href="/addtocardofertauno/<%= ofertaun.id %>"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="c_p_text">
+							<span><%= ofertaun.title %></span>
+								<br>
+								<h4>$<%= ofertaun.price %></h4>
+						</p>
+					</div>
+						<% }) %>	
+		
+		
+		</div>
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+
+
+
+
+<div class="main_2 wow fadeInUp">
+<div class="product">
+	<div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12">
+		<div class="container">
+		<h2>OFERTAS</h2>
+	
+	</div>
+</div>
+<div class="col-xl-3 product_list_side_img col-lg-3 col-md-3 col-sm-10">
+									
+</div>
+<div class="col-xl-8 product_list_caption col-lg-8 col-md-8 col-sm-12">
+	<h2><a href="#"></a></h2>
+	<div class="product_price">
+		<p> <del></del>
+			<span>
+		
+		</span>
+		</p>
+		<p class="p_caption">
+		</p>
+		<ul class="p_icon_list">
+		
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product_img_box">
+		<div class="container">
+<div class="row ">
+
+<% ofertados.forEach(function (ofertado) { %>
+<div class="col-xl-3 text-center col-lg-3 col-md-3 col-sm-6 best portfolio-item">
+<div class="img_box_1">
+	<a href="/ofertadosredirect/<%= ofertado.id %>"><div class="overlay"></div></a>
+	<img src="<%= ofertado.image %>" alt="">
+	<div class="p_icon">
+		<ul>
+			<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+			<li><a href="product_detail.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+</div>
+<p class="c_p_text">
+	<span><%= ofertado.title %></span>
+	<br>
+		<h4>$<%= ofertado.price %> </h4>
+</p>
+</div>
+<% }) %>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ <% include partials/_footer %>

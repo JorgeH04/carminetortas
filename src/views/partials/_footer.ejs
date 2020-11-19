@@ -1,0 +1,239 @@
+<!--______________________________bolg_______________________________-->
+<!--______________________________footer_______________________________-->
+
+<div class="main_4">
+  <footer>
+    <div class="container">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+            <div class="footer_text_1 wow fadeInUp">
+              <h4>TEXT WIDGET</h4>
+              <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              <div class="newletter">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter email for newsletter">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+            <div class="footer_text_2 wow fadeInUp">
+              <h4>TWITTER WIDGET</h4>
+              <p><span><a href="#">@ericafustero</a></span> Why thank you. Your work looks awesome by the way! <span><a href="#">@treemelody</a></span>
+                <br>12 days ago
+              </p>
+              <p><span><a href="#">@roymarvelous</a></span> You can seek a refund through TF if it is not as advertised - but it is :)
+                <br>12 days ago
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="footer_text_3 wow fadeInUp">
+              <h4>FLICKR WIDGET</h4>
+              <ul class="f_icon">
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.plus.google.com/discover" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/uas/login" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://identity.flickr.com/login?redir=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+              </ul>
+              <img src="img/group.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright wow fadeInUp">
+      <div class="container">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-5 col-sm-6">
+              <div class="c_left">
+                <p>Copyright © MegaDev 2020. 
+                <br>  <a href="#"></a></p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>			
+    </div>
+  </footer>
+</div>
+
+
+
+<!--______________________________footer_______________________________-->
+
+<script>
+  <% if (flash.success && flash.success.length > 0) {%>
+     new Noty({
+       theme: 'relax',
+       text: "<%= flash.success %>",
+       type: 'success',
+       layout: 'topRight',
+       timeout: 2000
+       
+     }).show();    
+   <%} %>
+
+   <% if (flash.error && flash.error.length > 0) {%>
+     new Noty({
+       theme: 'relax',
+       text: "<%= flash.error %>",
+       type: 'error',
+       layout: 'topRight',
+       timeout: 2000
+       
+     }).show();    
+   <%} %>
+
+   
+ </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script type='text/javascript' src='/scripts/scriptss.js'></script>
+<script src="/jss/jquery-1.11.2.min.js"></script>
+<script src="/jss/jquery.bxslider.min.js"></script>
+<script src="/jss/fancybox/fancybox.js"></script>
+<script src="/jss/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="/jss/jquery.flexslider-min.js"></script>
+<script src="/jss/swiper.jquery.min.js"></script>
+<script src="/jss/jquery.waypoints.min.js"></script>
+<script src="/jss/progressbar.min.js"></script>
+<script src="/jss/ion.rangeSlider.min.js"></script>
+<script src="/jss/chosen.jquery.min.js"></script>
+<script src="/jss/jQuery.Brazzers-Carousel.js"></script>
+<script src="/jss/plugins.js"></script>
+<script src="/jss/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAYvx0GmLyN5hlf6Uv_e9pPvUT3YpozE"></script>
+<script src="/jss/gmap.js"></script>
+<!--______________________________footer_______________________________-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.4.1.min.js"></script>
+--><script src="/js/owl.carousel.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script>
+$('.banner').owlCarousel({
+              items: 3,
+              animateOut: 'fadeOut',
+              loop: true,
+              margin: 10,
+              nav:false,
+               autoplayHoverPause:true,
+              autoplay:true,
+               responsive: {
+               
+                320: {
+                  items: 1,
+                  nav: false,
+              margin:10,
+                },
+                576: {
+                  items: 2,
+                  nav: false,
+              margin:10,
+                },
+                768: {
+                  items: 2,
+                  nav: false,
+              margin:10,
+                },
+                992: {
+                  items: 3,
+                  nav: false,
+                }
+                
+              }
+            });
+</script>
+
+<script>
+  $('.menu').click (function(){
+      $(this).toggleClass('open');
+  });
+</script>
+<script>
+$(window).load(function() {
+  $(".loader").delay(800).fadeOut("slow");
+$("#overlayer").delay(1000).fadeOut("slow");
+//$("body").delay(20000).removeClass("noscroll")
+});
+</script>
+
+<script>
+  $('.menu').click(function(){
+        $('.nav_text').toggleClass("menu_open");
+      });
+      $(".nav_text li a").click(function(){
+          $(".nav_text").removeClass("menu_open");
+          $(".menu").removeClass("open");
+        });
+</script>
+
+<script>
+   $(document).ready( function() {   
+  $('.portfolio-team').isotope({
+    itemSelector: '.portfolio-item',
+  });
+  // filter items on button click
+  $('.portfoliomenu').on( 'click', 'a', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('.portfolio-team').isotope({ filter: filterValue });
+    $('.portfoliomenu a').removeClass('active');
+    $(this).addClass('active');
+  });
+    })
+</script>
+<script>
+   $(document).ready(function() {
+   
+      $(".hover_search").click(function() {
+         $(".search-box").toggle();
+         //$("input[type='text']").focus();
+       });
+    });
+</script>
+<script>
+          $('.slider_main').owlCarousel({
+              items: 1,
+              loop: true,
+              margin: 10,
+              nav:false,
+              dots:false,
+               autoplayHoverPause:true,
+              autoplay:true,
+               responsive: {
+               
+                320: {
+                  items: 1,
+                  nav: false,
+              margin:10,
+              dots:false,
+                },
+               
+                
+              }
+            });
+          $('.slider_main').on('change.owl.carousel', function (event) {
+      var el = event.target;
+      $('h1, p, .caption_button, button', el).addClass('flipInX animated')
+              .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                  $('h1, p, .caption_button, button', el).removeClass('flipInX animated');
+              });
+          });
+           
+        </script>
+
+            
+<!--______________________________footer_______________________________-->
+</body>
+</html>

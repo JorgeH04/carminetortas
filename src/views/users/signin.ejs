@@ -1,0 +1,69 @@
+<% include ../partials/_header %>
+
+
+<div class="my-login-page" style="margin-top: 7%">
+        <section class="h-100">
+            <div class="container h-100">
+                <div class="row justify-content-md-center h-100">
+                    <div class="card-wrapper">
+                            <div class="brand">
+                                    
+                                </div>
+                        <div class="card fat">
+                            <div class="card-body">
+                                <h2 class="card-title mx-auto">LOGIN</h2>
+                                <form action="/users/signin" method="POST" class="my-login-validation" novalidate="">
+                                    <div class="form-group">
+                                        <label for="email">E-Mail Address</label>
+                                        <input type="email" name="email" id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                        <div class="invalid-feedback">
+                                            Email is invalid
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="password">Password
+                                            <a href="/forgot" class="float-right">
+                                                Olvidaste tu contraseña?
+                                            </a>
+                                        </label>
+                                        <input type="password" name="password" id="password" type="password" class="form-control" name="password" required data-eye>
+                                        <div class="invalid-feedback">
+                                            Password is required
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        
+                                    </div>
+    
+                                    <div class="form-group m-0">
+                                        <button type="submit" class="btn btn-dark btn-block">
+                                            Login
+                                        </button>
+                                    </div>
+                                    <div class="form-group m-0 mt-3">
+                                            <a href="/auth/facebook" class="btn btn-primary btn-block">
+                                                <i class="fa fa-facebook"></i>
+                                                Login con Facebook
+                                          </a>
+                                        <div class="form-group m-0 mt-3">
+                                            <a href="/google" class="btn btn-danger btn-block">
+                                                <i class="fa fa-google"></i>
+                                                Login con Google
+                                            </a>
+                                    <div class="mt-4 text-center">
+                                        No tenés una cuenta? <a href="/users/signup">Create una</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <% include ../partials/_footer %>

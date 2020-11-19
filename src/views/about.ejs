@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cascini || Nosotros</title>
+	<link rel="icon" href="img/logo.png">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+ 
+ 
+		<!--____________________header______________________________-->
+	
+		<div class="main_1 wow fadeInDown"  data-wow-delay=".8s">
+			<div class="container">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
+							<p class="logo"><a href="/">Calzados Cascini</a></p>
+						</div>
+						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
+							
+							<div class="search-box">
+    								<input type="text" placeholder=""/>
+    								<input type="button" value="Search"/>
+  								</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="n_top_nav">
+	
+				<div class="left_logo">
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
+						<p class="logo"><a href="/">Calzados Cascini</a></p>
+					</div>
+				</div>
+			<ul class="nav_text">
+				
+
+						<% if(user) { %>
+						<li><a href="/" class="menu_active">Home</a></li>
+						<li><a href="/produnoindex/1">Primavera/Verano</a></li>
+						<li><a href="/proddosindex/1">Otoño/Invierno</a></li>
+						<li><a href="/about">Nosotros</a></li>	
+						<li><a href="/perfil/1">Perfil</a></li>
+						 <li><a href="/users/logout">Salir</a></li>
+						 <li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
+						<% } else { %>    
+						<li><a href="/" class="menu_active">Home</a></li>
+						<li><a href="/produnoindex/1">Primavera/Verano</a></li>
+						<li><a href="/proddosindex/1">Otoño/Invierno</a></li>
+						<li><a href="/about">Nosotros</a></li>	
+						<li><a href="/users/signin">Iniciar Sesión</a></li>
+						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
+
+						<% } %>
+
+
+					</ul>
+					<div class="menu btn13" data-menu="2">
+						<div class="iconn">	<a href="/shopcart/" style="color:black"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></div>
+					</div>
+					<div class="menu btn2" data-menu="2">
+        				<div class="icon"></div>
+      				</div>
+      	
+		</div>
+
+<!--____________________nav______________________________-->
+<!--____________________banner______________________________-->
+
+	<div class="col-xl-12">
+		<div class="p_banner">
+			
+		</div>
+	</div>
+
+  
+
+<!--____________________banner______________________________-->
+<!--__________________________product______________________________-->
+<div class="product_About_detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 d-flex col-lg-6 col-md-12 col-sm-12">
+                <ul class="about_new">
+                    <li><h1>Welcome To Neshoes</h1></li>
+                    <li>Quibusdam perspiciatis pariatur magnam ducimus excepturi error libero provident animi laboriosam maiores ad explicabo ea laudantium nostrum dolor distinctio, quas fugiat doloribus, sit, possimus obcaecati ab quo vel commodi eum. Laudantium libero, voluptate rerum sunt hic,
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse numquam blanditiis quos, fuga, aspernatur doloribus expedita, soluta dolore cumque.</li>
+                    <li><button>VIEW WORK</button></li>
+                </ul>
+                
+            </div>
+            <div class="col-xl-6  d-flex col-lg-6 col-md-12 col-sm-12">
+                <a href="#"><img src="img/inner_block.jpg" alt=""></a>
+            </div> 
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <ul class="about_text_3">
+                    <li>We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support. We always keep an eye on the latest trends in Sneaker and put our customers’ wishes first. That is why we have satisfied customers all over the world, and are thrilled to be a part of the Sneaker industry. The interests of our customers are always the top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.</li>
+                    <li>Quibusdam perspiciatis pariatur magnam ducimus excepturi error libero provident animi laboriosam maiores ad explicabo ea laudantium nostrum dolor distinctio, quas fugiat doloribus, sit, possimus obcaecati ab quo vel commodi eum. Laudantium libero, voluptate rerum sunt hic,
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse numquam blanditiis quos, fuga, aspernatur doloribus expedita, soluta dolore cumque.</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--__________________________product______________________________-->
+
+
+
+<!--_____________________
+
+
+<% include partials/_footer %>

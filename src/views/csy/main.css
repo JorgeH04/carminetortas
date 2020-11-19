@@ -1,0 +1,267 @@
+
+
+/** Styles for product page ***/
+.prodcuts .breadcrumb{
+    margin-top: 5%;
+}
+.prodcuts .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.product-top {
+    background: #212121;
+    padding:  5px;
+}
+.product-top ul{
+    list-style: none;
+    float: right;
+}
+.product-top ul li{
+    display: inline-block;
+}
+.product-top h4 {
+    font-size: 1.3em;
+    color: #fff;
+    font-family: 'Offside', cursive;
+    float: left;
+}
+.product-top li {
+    margin-top: 9%;
+    padding-right: 25px;
+}
+.sidebar-products-main {
+    margin-top: 16%;
+}
+.sidebar-title {
+    padding: 10px;
+    background: #E0E0E0;
+    margin-bottom: 10px;
+}
+.sidebar-single{
+    margin-top: 5%;
+}
+.checkbox {
+    position: relative;
+    padding-left: 27px !important;
+    cursor: pointer;
+    line-height: initial;
+    font-size: 1em;
+    color: #353F49;
+    font-weight: 500;
+    margin: 0 0 1.5em;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/checkbox-unchecked.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/checkbox-checked.png) top no-repeat;
+    cursor:pointer;
+}
+/** Styles for product page ***/
+
+
+
+/*** Style for single Product page ***/
+.single-product {
+    margin: 3% 8% 3% 8%;
+}
+.single-product ul{
+    list-style: none;
+}
+.single-product ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.single-product .single-rating, .single-product .single-price{
+    margin-bottom: 5%;
+    border-bottom: 1px dotted #808080;
+}
+.single-product .product-price{
+    color: #e52325;
+    font-size: 2.8em;
+    font-weight: 300;
+    margin-right: 5.5em;
+}
+h3.item_name {
+    color: rgba(229, 35, 37, .7);
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
+.single-product .single-product-everything {
+    margin-top: 10%;
+}
+.single-product .single-product-everything a.main{
+    color: rgba(229, 35, 37, .7);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.single-product .single-extra-div {
+    margin-top: 1%;
+    background: whitesmoke;
+    padding: 15px;
+}
+.single-product-everything .collapseDiv {
+    padding: 1% 5% 1% 5%;
+}
+/*** Style for single Product page ***/
+
+
+/***Style For Registration Page / Login Page***/
+.registration-page{
+
+}
+.registration-page h2, .login-page h2 {
+    padding: 5%;
+    color: #0280e1;
+}
+.registration-page form, .login-page form{
+    padding: 2em;
+    -webkit-box-shadow: 0px 0px 4px 1px rgb(189, 189, 189);
+    -moz-box-shadow: 0px 0px 4px 1px rgb(189, 189, 189);
+    -o-box-shadow: 0px 0px 4px 1px rgb(189, 189, 189);
+    -ms-box-shadow: 0px 0px 4px 1px rgb(189, 189, 189);
+    box-shadow: 0px 0px 4px 1px rgb(189, 189, 189);
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+label.error {
+    color: rgba(255, 0, 0, 0.71);
+    font-weight: normal;
+}
+/***Style For Registration Page***/
+
+
+
+/*** Account Page for the User ***/
+.account-page{
+    padding:  5%;
+}
+.account-page h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted gray;
+}
+.account-page .well {
+    min-height: 190px;
+    padding: 0px 5px 0px 20px;
+    background-color: transparent;
+}
+.account-page h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+}
+.account-page ul{
+    list-style: none;
+}
+.account-page ul li{
+    padding: 5px;
+    font-weight: bold;
+}
+.account-page ul li.active {
+    display: block;
+    background: #ffd24b;
+    border-radius: 0px 1px 40px 0px;
+}
+.account-page ul li.active a {
+    color: #1B5E20;
+}
+/* .account-page ul li.active:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 39px solid #ffd451;
+    margin-top: -2px;
+} */
+.account-page ul li.active:hover{
+
+}
+.account-page form {
+    border: 1px solid #EEEEEE;
+    padding: 5%;
+}
+/*** Account Page for the User ***/
+
+
+/***Styles for chekout page ***/
+#check1, #check2, #check3 {
+    background: #fff8dc;
+    /* padding: 3% 2% 1% 2%; */
+    padding: 1%;
+    border: 1px solid rgba(88, 195, 232, 0.4);
+    margin: 1%;
+}
+#check1 h3, #check2 h3, #check3 h3 {
+    padding: 0% 2% 1% 2%;
+    margin: 2%;
+    color: #455A64;
+}
+.checkout-top-ok{
+    margin: 3%;
+}
+.check-dots {
+    color: #58c3e8;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+}
+#check-one-top, #check-two-top, #check-three-top {
+    background: #58C3E8;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+#check-one-top{
+    background: #004C48
+}
+#check-two-top{
+    background: #00BBB5
+}
+#check-three-top{
+    background: #58C3E8;
+}
+.payment-div{
+    border:  1px solid rgba(88, 195, 232, 0.4);
+    padding: 20px;
+    margin-top: 5px;
+}
+.payment-div i {
+    color: #01579B;
+    font-size: 4em;
+    padding: 5px;
+}
+.error-input {
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.09);
+    color: #546E7A;
+}
+.success-input {
+    border: 1px solid green;
+    background: rgba(0, 255, 0, 0.09);
+    color: #546E7A;
+}
+.input-hint{
+    font-style: italic;
+    font-size: 12px;
+    color: gray;
+}
+/***Styles for chekout page ***/

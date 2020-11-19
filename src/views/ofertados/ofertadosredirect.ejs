@@ -1,0 +1,336 @@
+<% include ../partials/_header %>
+<!--____________________banner______________________________-->
+
+<div class="col-xl-12">
+  <div class="p_banner">
+      
+  </div>
+</div>
+<!--____________________banner______________________________-->
+<!--__________________________product______________________________-->
+
+
+<div class="product_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 d-flex col-lg-8 col-md-8 col-sm-12">
+                    <div class="text_detail">
+                    <h2><%= ofertados.title %></h2>
+                    <ul class="star">
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li></li>
+                    </ul>
+                    <ul class="price_text">
+                        <li>$<%= ofertados.price %></li>
+                        <li><%= ofertados.description %>.</li>
+                    </ul>
+                    <p class="stock"><span></span></p>
+                    <div class="quantity">
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <span><%= ofertados.enstock %></span> 
+
+                     <button><a href="/addtocardofertados/<%= ofertados.id %>" role="button">Agregar al carro</a></button>   
+                    
+                    </div>
+                    <ul class="button_box">
+                        <li><a href="/ofertados/tallecolor/<%= ofertados.id %>">Elija su talle y color</a></li>
+                    </ul>
+                    <div class="product_meta">
+                        <p><span>Colores en Stock:</span> <%= ofertados.colorstock %></p>
+                        <p><span>Talles en Stock:</span> <%= ofertados.tallestock %></p>
+                    </div>
+                    <ul class="f_icon">
+                         
+                            </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 d-flex text-center col-lg-4 col-md-4 col-sm-12">
+            
+                <div class="product_ing">
+                    <img src="<%= ofertados.image %>" alt="">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                <div class="p_d_c2">
+                    <div class="product_ing">
+                        <img src="<%= ofertados.imagedos %>" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                <div class="p_d_c2">
+                    <div class="product_ing">
+                        <img src="<%= ofertados.imagetres %>" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                <div class="p_d_c2">
+                    <div class="product_ing">
+                        <img src="<%= ofertados.image %>" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--__________________________product______________________________-->
+
+
+<div class="main_4">
+    <footer>
+      <div class="container">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="footer_text_1 wow fadeInUp">
+                <h4>TEXT WIDGET</h4>
+                <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <div class="newletter">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  <input type="text" placeholder="Enter email for newsletter">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="footer_text_2 wow fadeInUp">
+                <h4>TWITTER WIDGET</h4>
+                <p><span><a href="#">@ericafustero</a></span> Why thank you. Your work looks awesome by the way! <span><a href="#">@treemelody</a></span>
+                  <br>12 days ago
+                </p>
+                <p><span><a href="#">@roymarvelous</a></span> You can seek a refund through TF if it is not as advertised - but it is :)
+                  <br>12 days ago
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="footer_text_3 wow fadeInUp">
+                <h4>FLICKR WIDGET</h4>
+                <ul class="f_icon">
+                  <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.plus.google.com/discover" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/uas/login" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="https://identity.flickr.com/login?redir=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                </ul>
+                <img src="img/group.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright wow fadeInUp">
+        <div class="container">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                <div class="c_left">
+                  <p>Copyright © Neseshoes 2019. 
+                  <br>Designed by <a href="#">NikunjLathiya.</a></p>
+                </div>
+              </div>
+              <div class="col-xl-9 text-right col-lg-9 col-md-7 col-sm-6">
+                <div class="c_right">
+                  <p><a href="#">Home / Support / Terms and Conditions / Faqs / Contact us</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>			
+      </div>
+    </footer>
+  </div>
+  
+  <script type="text/javascript" src="/jsz/jquery.min.js"></script>
+  <script type="text/javascript" src="/jsz/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/jsz/script.js"></script>
+  
+  <!--______________________________footer_______________________________-->
+  <!--______________________________footer_______________________________-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+  <!-- <script src="js/jquery-3.4.1.min.js"></script>
+  --><script src="/js/owl.carousel.js"></script>
+  <script src="/js/isotope.pkgd.min.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+  <script>
+    <% if (flash.success && flash.success.length > 0) {%>
+         new Noty({
+             theme: 'relax',
+             text: "<%= flash.success %>",
+             type: 'success',
+             layout: 'topRight',
+             timeout: 2000
+             
+         }).show();    
+     <%} %>
+  
+     <% if (flash.error && flash.error.length > 0) {%>
+         new Noty({
+             theme: 'relax',
+             text: "<%= flash.error %>",
+             type: 'error',
+             layout: 'topRight',
+             timeout: 2000
+             
+         }).show();    
+     <%} %>
+  
+     
+  </script>
+  
+  <script>
+  $('.banner').owlCarousel({
+                items: 3,
+                animateOut: 'fadeOut',
+                loop: true,
+                margin: 10,
+                nav:false,
+                 autoplayHoverPause:true,
+                autoplay:true,
+                 responsive: {
+                 
+                  320: {
+                    items: 1,
+                    nav: false,
+                margin:10,
+                  },
+                  576: {
+                    items: 2,
+                    nav: false,
+                margin:10,
+                  },
+                  768: {
+                    items: 2,
+                    nav: false,
+                margin:10,
+                  },
+                  992: {
+                    items: 3,
+                    nav: false,
+                  }
+                  
+                }
+  
+              });
+  </script>
+  
+  <script>
+      $('.menu').click (function(){
+          $(this).toggleClass('open');
+      });
+    
+    </script>
+  <script>
+      $(window).load(function() {
+        $(".loader").delay(800).fadeOut("slow");
+      $("#overlayer").delay(1000).fadeOut("slow");
+      //$("body").delay(20000).removeClass("noscroll")
+      });
+      
+      </script>
+  
+  <script>
+    $('.menu').click(function(){
+          $('.nav_text').toggleClass("menu_open");
+        });
+        $(".nav_text li a").click(function(){
+            $(".nav_text").removeClass("menu_open");
+            $(".menu").removeClass("open");
+  
+          });
+  </script>
+  
+  <script>
+     $(document).ready( function() {   
+  
+    $('.portfolio-team').isotope({
+      itemSelector: '.portfolio-item',
+    });
+  
+    // filter items on button click
+    $('.portfoliomenu').on( 'click', 'a', function() {
+      var filterValue = $(this).attr('data-filter');
+      $('.portfolio-team').isotope({ filter: filterValue });
+      $('.portfoliomenu a').removeClass('active');
+      $(this).addClass('active');
+    });
+      })
+  </script>
+  <script>
+      $(document).ready(function() {
+      
+         $(".hover_search").click(function() {
+            $(".search-box").toggle();
+            //$("input[type='text']").focus();
+          });
+   
+       });
+   </script>
+  <script>
+            $('.slider_main').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav:false,
+                dots:false,
+                 autoplayHoverPause:true,
+                autoplay:true,
+                 responsive: {
+                 
+                  320: {
+                    items: 1,
+                    nav: false,
+                margin:10,
+                dots:false,
+                  },
+                 
+                  
+                }
+  
+  
+              });
+            $('.slider_main').on('change.owl.carousel', function (event) {
+        var el = event.target;
+        $('h1, p, .caption_button, button', el).addClass('flipInX animated')
+                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                    $('h1, p, .caption_button, button', el).removeClass('flipInX animated');
+                });
+            });
+             
+          </script>
+  
+              
+  <!--______________________________footer_______________________________-->
+  
+  
+  
+  
+  <script src="/jsz/imagezoom.js" type="text/javascript"></script>
+  
+  <script src="/jsz/wow.min.js"></script>
+  
+  <script type="text/javascript" src="/jsz/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/jsz/webslidemenu.js"></script>
+  <script type="text/javascript" src="/jsz/main.js"></script>
+  </body>
+  </html>
+

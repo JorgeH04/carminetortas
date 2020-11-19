@@ -1,0 +1,37 @@
+<% include ../partials/_header %>
+
+
+
+
+
+<div class="container">
+    <div class="container5">
+    <div class="card">
+        <div class="card-header">
+            <h3>Change Password</h3>
+        </div>
+        <div class="card-body">
+            <form action="/passwordForgot/<%= User.resetPasswordToken %>" method="POST">
+                <i class="fa fa-key" aria-hidden="true" id="user1"></i>
+                <input type="password" name="resetPassword" placeholder="Password" required id="username">
+                <i class="fa fa-key" aria-hidden="true" id="user1"></i>
+                <input type="password" name="repeatresetPassword" placeholder="Repeat Password" required id="username">
+                <input type="Checkbox" name="checked" id="check">Remember Mee</input>
+                <span>
+                    <input type="submit" value="Change Password" id="content1">
+                    <!-- <a class="btn" id="content1" href="#">Login</a> -->
+                </span>
+
+            </form>
+        </div>
+        <div class="card-footer" id="cfooter">
+           <p>Reset Your Password Here!</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+  <% include ../partials/_footer %>

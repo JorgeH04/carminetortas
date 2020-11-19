@@ -1,0 +1,58 @@
+<% include ../partials/_header %>
+
+
+
+
+<div class="my-login-page" style="margin-top: 9%">
+  <section class="h-100">
+      <div class="container h-100">
+          <div class="row justify-content-md-center h-100">
+              <div class="card-wrapper">
+                      <div class="brand">
+                              
+                          </div>
+                  <div class="card fat">
+                      <div class="card-body">
+                          <h2 class="card-title mx-auto">Elija su color y talle</h2>
+                          <form action="/ofertatres/tallecolor/<%= ofertatres._id %>" method="POST" class="my-login-validation" novalidate="">
+                              <div class="form-group">
+                                  <label for="email">Talles en stock</label>
+                                  <input type="text" name="talle" class="form-control" value="<%= ofertatres.tallestock %>" required autofocus>
+                                  <div class="invalid-feedback">
+                                      Email is invalid
+                                  </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="email">Colores en stock</label>
+                                  <input type="text" name="color" class="form-control" value="<%= ofertatres.colorstock %>" data-eye>
+                                  
+                              </div>
+
+                              <div class="form-group">
+                                  <div class="custom-checkbox custom-control">
+                                      <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                                  </div>
+                              </div>
+
+                              <div class="form-group m-0">
+                                  <button type="submit" class="btn btn-dark btn-block">
+                                      Guardar
+                                  </button>
+                              </div>
+                               
+       
+                          </form>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+</div>
+
+
+      <% include ../partials/_footer %>
+      
